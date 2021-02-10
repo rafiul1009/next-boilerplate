@@ -1,0 +1,7 @@
+{
+    "site-name": "ইচেলন",
+    "site-tagline": "অনলাইন ফুড ডেলিভারি সিস্টেম",
+    "error-with-status": "সার্ভারে একটি {{statusCode}} ত্রুটি ঘটেছে",
+    "error-without-status": "সার্ভারে একটি ত্রুটি ঘটেছে",
+    "page-not-found": "পৃষ্ঠা খুঁজে পাওয়া যায়নি"
+}

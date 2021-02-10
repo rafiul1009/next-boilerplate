@@ -1,0 +1,140 @@
+.preloaderArea {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 200000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.absolute {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.preloaderArea svg {
+    width: 0;
+    height: 0;
+}
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    filter: url(#gooey);
+}
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: gooeyspin 4s ease-in-out infinite;
+    animation-delay: calc(0.2s * var(--i));
+}
+.loader span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    width: 21px;
+    height: 21px;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
+    box-shadow: 0 0 30px #6060b6;
+}
+@-moz-keyframes gooeyspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%, 100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes gooeyspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%, 100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes gooeyspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%, 100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes gooeyspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%, 100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes flikrLoader-o {
+    0%    { opacity: 1; transform: translate(0 0) }
+   49.99% { opacity: 1; transform: translate(40px,0) }
+   50%    { opacity: 0; transform: translate(40px,0) }
+  100%    { opacity: 0; transform: translate(0,0) }
+}
+@keyframes flikrLoader {
+    0% { transform: translate(0,0) }
+   50% { transform: translate(40px,0) }
+  100% { transform: translate(0,0) }
+}
+.flikrLoader div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 30px;
+  left: 10px;
+}
+.flikrLoader div:nth-child(1) {
+  background: #1f87cd;
+  animation: flikrLoader 1s linear infinite;
+  animation-delay: -0.5s;
+}
+.flikrLoader div:nth-child(2) {
+  background: #f7446b;
+  animation: flikrLoader 1s linear infinite;
+  animation-delay: 0s;
+}
+.flikrLoader div:nth-child(3) {
+  background: #1f87cd;
+  animation: flikrLoader-o 1s linear infinite;
+  animation-delay: -0.5s;
+}
+.flikrLoaderSpinner {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  overflow: hidden;
+  background: #fff;
+}
+.preloaderArea > div {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.flikrLoader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.5);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.flikrLoader div { box-sizing: content-box; }

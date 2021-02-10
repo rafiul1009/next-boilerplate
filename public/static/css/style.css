@@ -1,0 +1,135 @@
+/* BASE CSS START */
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap");
+ .alignleft {
+	float: left;
+	margin-right: 15px;
+}
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+a,
+a:hover,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+	outline: 0 solid !important;
+	text-decoration: none;
+}
+a {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	color: #111;
+}
+button {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	background: transparent;
+	border: none;
+}
+a:hover {
+	color: #1f87cd;
+}
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+} */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+
+*:disabled {
+	cursor: not-allowed;
+}
+/* html {
+	overflow-x: hidden;
+} */
+
+body {
+	font-family: "Work Sans", sans-serif;
+	overflow-x: hidden;
+	/* position: relative; */
+	font-size: 15px;
+	font-weight: 400;
+	background-color: #f7f7f7;
+	color: #1d1d1d;
+}
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #ddd #f1f1f1;
+}
+/* width */
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	border-radius: 10px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background-color: #ddd;
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ccc;
+}
+.common-margin {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.common-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.common-padding-top {
+	padding-top: 20px;
+}
+.common-padding-bottom {
+	padding-bottom: 20px;
+}
+.fancybox-active.compensate-for-scrollbar {
+	margin-right: 0 !important;
+}
+.white-shaded-bg {
+	background-color: #eeeeee;
+}
+.row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+.row [class^="col-"] {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+/* ----------------------- */

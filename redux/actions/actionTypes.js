@@ -1,0 +1,10 @@
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const UPDATE_CART = 'UPDATE_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+
+
+
+
+// GOBAL STATE ACTION
+export const SET_HEADER_HEIGHT = 'SET_HEADER_HEIGHT';
+export const GET_HEADER_HEIGHT = 'GET_HEADER_HEIGHT';
